@@ -108,21 +108,21 @@ body::-webkit-scrollbar-thumb {
   
   justify-items: center;
   gap: 40px;
-  grid-template-columns: repeat(3, 1fr)
+  grid-template-columns: repeat(2, 1fr)
 
 }
 
 
 .card{
-  height: 55ch;
-  width: 45ch;
+  height: 45ch;
+  width: 70ch;
   background-color: blue;
   
   border-radius: 4px;
 }
 .card:hover{
-  height: 55ch;
-  width: 45ch;
+  height: 45ch;
+  width: 70ch;
   background-color: blue;
   border: solid;
   border-radius: 4px;
