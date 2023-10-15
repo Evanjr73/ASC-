@@ -20,7 +20,7 @@ main{
   text-align: end;
   height: 2.1rem;
   width: 100%;
-  background-color: rgb(104, 104, 238);
+  background-color: rgba(247, 247, 247, 0.927);
   
   border: solid 0px;
 }
@@ -52,7 +52,15 @@ details{
   font-size: 19px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+details:hover{
+  transition: 0.2s;
+  padding: 5px;
+  cursor: pointer;
+  color: rgb(209, 250, 0);
+  border: solid rgba(230, 229, 206, 0.57);
+  font-size: 19px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 body::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
 }
@@ -103,19 +111,21 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: repeat(3, 1fr)
 
 }
+
+
 .card{
-  height: 450px;
-  width: 350px;
+  height: 55ch;
+  width: 45ch;
   background-color: blue;
-  border: solid;
-  border-radius: 10px;
+  
+  border-radius: 4px;
 }
 .card:hover{
-  height: 455px;
-  width: 355px;
+  height: 55ch;
+  width: 45ch;
   background-color: blue;
   border: solid;
-  border-radius: 10px;
+  border-radius: 4px;
   transition: 0.2s;
 }
 footer{
@@ -138,4 +148,28 @@ footer{
     animation: logo-spin infinite 20s linear;
   }
 } */
-
+@media only screen and (max-width: 377px){
+  #grid{
+    display: grid;
+    
+    justify-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr)
+  
+  }
+  .card{
+    height: 150px;
+    width: 190px;
+    background-color: blue;
+    
+    border-radius: 4px;
+  }
+  .card:hover{
+    height: 50px;
+    width: 90px;
+    background-color: blue;
+    border: solid;
+    border-radius: 4px;
+    transition: 0.2s;
+  }
+}
